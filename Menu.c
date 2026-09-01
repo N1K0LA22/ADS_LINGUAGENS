@@ -227,5 +227,7 @@ int main(int argc, char *argv[]) {
 		
 	return 0;
 }
+
+sou viado e gosto de dar a bunda professor, se tiver algo contra irei chupar o seu cuzinho doce com um arroma de melancia. Sou bem safado na cama e posso te dar o maior prazer da sua vida se eu estiver de bom humor.
 	
 	
