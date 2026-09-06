@@ -135,23 +135,46 @@ printf("Digite os segundos: \n");
 scanf("%d", &segundos);
 
 horas = segundos  / 3600;
-minutos = segundos / 60;
+minutos = (segundos-(horas*3600))/60;
+segundos = segundos -((horas*3600)+(minutos*60));
 
 printf("Horas: %d\n", horas);
 printf("Minutos: %d\n", minutos);
 printf("Segundos: %d\n", segundos);
 
-if(minutos > 60){
-    horas++;
-    minutos = 60;
-}
-
-
 printf("Valor formatado: %d:%d:%d\n", horas, minutos, segundos);
 
 
+//ex 9
+// o carro faz 12 km/l, a cada 12 km é um litro
+printf("====================ex9====================\n");
+
+float horas1, vel, litros, distancia;
+
+printf("Quanto tempo foi gasto na viagem? ");
+scanf("%f", &horas1);
+
+printf("Digite a velocidade média(km/h): ");
+scanf("%f", &vel);
+
+distancia = horas1 * vel;
+litros = distancia / 12;
+
+printf("A distância percorrida foi: %.3f km/h\n", distancia);
+printf("Litros que serão gastos na viagem: %.3f\n", litros);
 
 
+//ex 10
+printf("====================ex10====================\n");
+
+int a, b, c, maior_temp, maior;
+printf("Insira os valores a serem comparados: ");
+scanf("%d %d %d", &a, &b, &c);
+	
+maior_temp = ((a+b)+abs(a-b))/2;
+maior = ((maior_temp+c)+abs(maior_temp-c))/2;
+	
+printf("O maior entre |%d|%d|%d| = %d", a,b,c,maior);
 
     return 0;
 }
